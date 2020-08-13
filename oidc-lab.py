@@ -705,5 +705,5 @@ if __name__ == "__main__":
         # Allow insecure oauth2 when debugging
         os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
-    server = WSGIServer(("", 8000), app)
+    server = WSGIServer(("", PORT), app)
     server.serve_forever()
